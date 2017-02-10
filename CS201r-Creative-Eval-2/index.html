@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>D&D Encounter Generator</title>
+    <link rel="SHORTCUT ICON" href="img/nat20.png">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="JQuery.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <audio src="media/epicBattleMusic.mp3" autoplay="true" loop="true"></audio>
+        <audio src="media/lose.mp3" id="loseaudio"></audio>
+        <audio src="media/flee.mp3" id="fleeaudio"></audio>
+        <div id="menudiv">
+            
+            <div id="ddlogodiv">   
+            <img src="media/d&dlogo.png" width="130px">
+            </div>
+            
+            <div id="listdiv">
+                <ul class="mytext">
+                    <li><a href="http://dnd.wizards.com/dungeons-and-dragons">New to D&#38D?</a></li>
+                    <li><a href="http://dnd.wizards.com/articles">Articles</a></li>
+                    <li><a href="http://dnd.wizards.com/community">Community</a></li>
+                    <li><a href="http://dnd.wizards.com/products/catalog">I Want More!</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <h1 id="introtitle" class="mytext"><u>DUNGEONS AND DRAGONS</u></h1>
+        <h2 id="introsubtitle" class="mytext">- Random Encounter Generator -</h2>
+        
+        <hr>
+
+        <h3 id="description" class="mytext">Click below to generate a your encounter...</h3>
+        
+        <div id="encounterBtn">
+        <input id="EncounterButton" type="submit" value="Make A Random Encounter!">
+        </div>
+        <div id="output">
+        <div id= "status" class="EncounterData"></div>
+        <img src="" id="monstericon">
+        <div id= "monsterencounter" class="EncounterData"></div>
+        <div id= "monsterstats" class="EncounterData"></div>
+        <input id="FightButton" class="battlebuttons" type="submit" value="FIGHT!">
+        <input id="FleeButton" class="battlebuttons" type="submit" value="FLEE!">
+        </div>        
+    </body>
+</html>
